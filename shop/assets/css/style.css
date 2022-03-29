@@ -1,0 +1,662 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'rabarr';
+  font-weight: normal;
+}
+body{
+  font-family: 'rabarr';
+  font-weight: normal;
+  background-color: lavender;
+}
+@font-face {
+        font-family: 'rabarr';
+        src: url('../fonts/rabarr.woff2') format('woff2'),
+            url('../fonts/rabarr.woff') format('woff');
+}
+
+  .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 20vh;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+  }
+  .search form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 20vh;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+  }
+  .search input{
+      width: 65%;
+      height: 50px;
+     border-top-right-radius: 50px;
+     border-bottom-right-radius: 50px;
+      border: none;
+      outline: none;
+      padding: 0 10px;
+      font-size: 20px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      direction: rtl;
+
+  }
+  .search button{
+      font-size: 30px;
+      background-color: tomato;
+      color: white;
+      width: 60px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      cursor: pointer;
+      
+  }
+  .searchback{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .searchback a{
+    color: tomato;
+    font-size: 22px;
+  }
+  .noresult{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .noresult a{
+    margin-top: 20px;
+    color: red;
+    font-size: 22px;
+  }
+  ::placeholder{
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .kartakan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+    direction: rtl;
+  }
+  .kart{
+    width: 20%;
+    height: 20vh;
+    background-color: tomato;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 10px;
+    position: relative;
+  }
+  .capturedst{
+    position: absolute;
+    top: 14px;
+    right: 0;
+    transform: rotate(-50deg);
+    background-color: red;
+    padding: 0 10px;
+  }
+  .capturedst h4{
+    font-size: 14px;
+    color: white;
+  }
+  .kart h1{
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .binin{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .binin a{
+    text-decoration: none;
+    background-color: white;
+    color: tomato;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .getbox{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .getbox form{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .getbox-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .getbox-title h1{
+    font-size: 35px;
+    color: tomato;
+  }
+  .getbox-title i{
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  .getbox-email{
+    width: 40%;
+    margin-top: 30px;
+  }
+  .getbox-email input{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    direction: rtl;
+ border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .getbox-email select{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    direction: rtl;
+ border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .getbox-btn{
+    width: 40%;
+    margin-top: 30px;
+  }
+  .getbox-btn button{
+    background-color: tomato;
+    color: white;
+    width: 100%;
+    height: 50px;
+ border-radius: 50px;
+ margin-bottom: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  /*  page 2 */
+
+  
+  .form{
+    width: 100%;
+    height: 100vh;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    position: relative;
+    width: 450px;
+    height: 550px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+  }
+  .formtitle{
+    font-size: 15px;
+    text-align: center;
+    color: tomato;
+    margin-bottom: 40px;
+  }
+  .inputs {
+    text-align: right;
+  }
+  
+  inputs label, input, button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .inputs label {
+    
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  
+  .inputs label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+  .inputs input::placeholder {
+    color: gray;
+  }
+  
+  .inputs input {
+    margin-bottom: 20px;
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+  
+  .inputs button {
+    margin-top: 20px;
+    background: tomato;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+  }
+  
+  .inputs button:hover {
+    box-shadow: none;
+  }
+
+  /* dropdow */
+  .downall{
+    display: flex;
+    justify-content: center;
+  }
+  .down select{
+    background: #ecf0f3;
+    color: rgb(14, 14, 14);
+    width: 130px;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    line-height: 1px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+
+  /* info profile */
+
+  .admin-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+  }
+  h1{
+    color: tomato;
+  }
+  .admin-body table{
+  width: 80%;
+  border: 0px solid black;
+  border-radius: 8px;
+  color: white;
+  margin-top: 30px;
+}
+.admin-body table td{
+  position: relative;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
+  border: 1px solid black;
+  color: black;
+}
+.admin-body table td button{
+  font-size: 16px;
+  background-color: transparent;
+  color: green;
+  cursor: pointer; 
+}
+
+
+
+.profile-all{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.profile-card{
+    width: 50%;
+    height: 40vh;
+    background-color: tomato;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid white;
+}
+.profile-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    
+}
+.profile-card .imgname{
+    display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.profile-card .imgname h1{
+    color: white;
+    margin-left: 10px;
+}
+.profile-card .phonecity{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.profile-card .phonecity h2{
+    color: white;
+    font-size: 20px;
+}
+.backbtn{
+  width: 40%;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.backbtn a{
+  color: green;
+  font-size: 18px;
+}
+.backbtn button{
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* table */
+
+#customers {
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 50px;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #ddd;}
+  
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: tomato;
+    color: white;
+  }
+  #customers td input{
+    height: 35px;
+    border: 1px solid black;
+  }
+  #customers td select{
+    width: 95%;
+    height: 35px;
+    border: 1px solid black;
+  }
+  #customers td select optgroup{
+    color: black;
+  }
+  #customers td button{
+    width: 95%;
+    height: 35px;
+    border: 1px solid tomato;
+  }
+
+
+
+  /* admin page */
+  .alladmin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+  .alladmin a{
+    text-decoration: none;
+  }
+.admin-card{
+  width: 350px;
+  height: 400px;
+  background-color: tomato;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s ease-in;margin: 20px;
+}
+.admin-card:hover{
+  transform: scale(1.1);
+}
+.admin-card img{
+  width: 300px;
+  height: 300px;
+}
+.admin-card h1{
+  color: white;
+}
+
+
+/*sendbox page*/
+.archive{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+/*Login Page Design*/
+.lg-container{
+  background-color: #ecf0f3;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+.lg-row{
+    width: 400px;
+    border-radius: 20px;
+    margin: 30px 0px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    direction: rtl;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lg-row-logo img{
+  width: 140px;
+}
+.lg-row-header h1{
+  direction: rtl;
+  font-size: 20px;
+  color: #022069;
+  margin-bottom: 20px;
+}
+.lg-row-inp{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.lg-row-inp input{
+  margin: 10px 0;
+  padding: 0 5px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #FC813C;
+  direction: rtl;
+  outline: none;
+}
+.lg-row-inp button{
+  margin: 10px 0;
+  height: 30px;
+  background-color: #FC813C;
+  border: none;
+}
+.lg-row-inp button:hover{
+  background-color: #FC9155;
+}
+
+.logoutbtn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.logoutbtn a{
+  font-size: 26px;
+  color: red;
+}
+
+
+/*Add Box*/
+.addbox{
+  width: 60%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.addbox form{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.addbox h1{
+  text-align: right;
+  color: white;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.addbox input{
+  width: 80%;
+  height: 50px;
+  direction: rtl;
+  padding: 0 10px;
+}
+.addbox button{
+  margin-top: 20px;
+  width: 80%;
+  height: 50px;
+  direction: rtl;
+  padding: 0 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+/*header*/
+.header{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.header-img img{
+  width: 150px;
+  margin: 20px 50px;
+}
+.header-text h1{
+  margin: 0px 50px;
+}
+.header-nav{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  direction: rtl;
+}
+.header-nav a{
+  margin: 10px 20px;
+  font-size: 22px;
+  color: tomato;
+}
+  
+  
+  
